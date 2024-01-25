@@ -1,0 +1,61 @@
+body.otras-paginas {
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+    max-width: 600px;
+    margin: 200px auto;
+    padding: 20px;
+    border: 10px solid #ccc;
+    border-radius: 100px;
+}
+body.pagina-principal {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+.boton{
+    background-color: #7b6ed6;
+    padding: 10px 10px;
+    border: 10 px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border: 4px solid #ccc;
+    border-radius: 100px;
+
+}
+.boton-verde {
+background-color: green;
+color: white;
+text-align: center;
+
+}
+
+.boton-morado{
+background-color: violet;
+color: white;
+text-align: center;
+}

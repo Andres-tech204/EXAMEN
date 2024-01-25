@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculo de compras</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="otras-paginas">
+     <h1 class="titulo">Calculo de compras</h1>
+     {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <form method="post" action="/ejercicio1">
+    <label for="nombre" class="etiqueta">Ingresa tu nombre</label>
+    <input type="text" id="nombre" name="nombre" required class="input-text"><br>
+
+    <label for="edad" class="etiqueta">Ingresa tu edad</label>
+    <input type="text" id="edad" name="edad" required class="input-text"><br>
+
+    <label for="cantidadtarros" class="etiqueta">Ingresa la cantidad de tarros de pintura a comprar</label>
+    <input type="text" id="cantidadtarros" name="cantidadtarros" required class="input-text"><br>
+
+    <button class ="boton" type="submit">Calcular</button>
+    </form>
+
+
+     {% if nombre_cliente %}
+         <p>Nombre del cliente: {{ nombre_cliente }}</p>
+         <p>Total sin descuento: {{ total_sin_descuento }}</p>
+         <p>El descuento es: {{ descuento }}</p>
+         <p>El total a pagar es de: {{ total_a_pagar }}</p>
+     {% endif %}
+</body>
+</html>
